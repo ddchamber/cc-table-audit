@@ -1,0 +1,1 @@
+SELECT schema_owner, catalog_name FROM system.information_schema.schemata WHERE (catalog_name, schema_name) IN (('prod_shared_gold','central_analytics_crd'),('prod_shared_silver','central_analytics_enr'))

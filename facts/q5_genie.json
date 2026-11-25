@@ -1,0 +1,85 @@
+{
+  "spaces_checked": 8,
+  "unreadable": [
+    "01f1ded924e61030a3b7f025b3b55100 TikTok Marketing Measurement - Data Enablement: PermissionDenied",
+    "01f1d32e2ca7166e88db51ec6b5f76d4 Paid search (Skai): PermissionDenied",
+    "01f139b8ef1f1d6e99cc2c7bcd2b7c67 Central Analytics - Attendance Databricks Genie: PermissionDenied"
+  ],
+  "matches": [
+    {
+      "full_name": "prod_shared_gold.central_analytics_crd.voc_vw_qualtrics_survey_responses",
+      "space_id": "01f1d7c8666a1bd29100893e445a69e5",
+      "space_title": "VoC Won-Loss Competitive Intelligence"
+    },
+    {
+      "full_name": "prod_shared_gold.central_analytics_crd.voc_discovery_interviews",
+      "space_id": "01f1d7c8666a1bd29100893e445a69e5",
+      "space_title": "VoC Won-Loss Competitive Intelligence"
+    },
+    {
+      "full_name": "prod_shared_gold.central_analytics_crd.voc_wonloss_interviews",
+      "space_id": "01f1d7c8666a1bd29100893e445a69e5",
+      "space_title": "VoC Won-Loss Competitive Intelligence"
+    },
+    {
+      "full_name": "prod_shared_gold.central_analytics_crd.voc_vw_sf_opportunities",
+      "space_id": "01f1d7c8666a1bd29100893e445a69e5",
+      "space_title": "VoC Won-Loss Competitive Intelligence"
+    },
+    {
+      "full_name": "prod_shared_gold.central_analytics_crd.voc_vw_qualtrics_csat_scores",
+      "space_id": "01f1d7c8666a1bd29100893e445a69e5",
+      "space_title": "VoC Won-Loss Competitive Intelligence"
+    },
+    {
+      "full_name": "prod_shared_gold.central_analytics_crd.voc_wonloss_category_scores",
+      "space_id": "01f1d7c8666a1bd29100893e445a69e5",
+      "space_title": "VoC Won-Loss Competitive Intelligence"
+    },
+    {
+      "full_name": "prod_shared_gold.central_analytics_crd.voc_wonloss_responses",
+      "space_id": "01f1d7c8666a1bd29100893e445a69e5",
+      "space_title": "VoC Won-Loss Competitive Intelligence"
+    },
+    {
+      "full_name": "prod_shared_gold.central_analytics_crd.voc_discovery_responses",
+      "space_id": "01f1d7c8666a1bd29100893e445a69e5",
+      "space_title": "VoC Won-Loss Competitive Intelligence"
+    },
+    {
+      "full_name": "prod_shared_gold.central_analytics_crd.voc_vw_interview_sf_link",
+      "space_id": "01f1d7c8666a1bd29100893e445a69e5",
+      "space_title": "VoC Won-Loss Competitive Intelligence"
+    },
+    {
+      "full_name": "prod_shared_gold.central_analytics_crd.music_artist_lookup",
+      "space_id": "01f1ad736203170b88b764d2dc45bc80",
+      "space_title": "TM Music Post-Onsale Performance"
+    },
+    {
+      "full_name": "prod_shared_gold.central_analytics_crd.music_event_phase_summary",
+      "space_id": "01f1ad736203170b88b764d2dc45bc80",
+      "space_title": "TM Music Post-Onsale Performance"
+    },
+    {
+      "full_name": "prod_shared_gold.central_analytics_crd.music_queue_member_fact",
+      "space_id": "01f1ad736203170b88b764d2dc45bc80",
+      "space_title": "TM Music Post-Onsale Performance"
+    },
+    {
+      "full_name": "prod_shared_gold.central_analytics_crd.music_benchmark_stats",
+      "space_id": "01f1ad736203170b88b764d2dc45bc80",
+      "space_title": "TM Music Post-Onsale Performance"
+    },
+    {
+      "full_name": "prod_shared_gold.central_analytics_crd.music_str_daily",
+      "space_id": "01f1ad736203170b88b764d2dc45bc80",
+      "space_title": "TM Music Post-Onsale Performance"
+    },
+    {
+      "full_name": "prod_shared_gold.central_analytics_crd.music_asu_tour_conversion",
+      "space_id": "01f1ad736203170b88b764d2dc45bc80",
+      "space_title": "TM Music Post-Onsale Performance"
+    }
+  ]
+}

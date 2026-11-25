@@ -1,0 +1,7 @@
+table_name,cols
+voc_discovery_interviews,"interview_quarter, file_name, interview_date, interview_subtype, client_name, primary_competitor, opportunity_id_18, sf_account_id, interview_id, interview_year, interview_type"
+voc_vw_qualtrics_survey_responses,"recorded_date, recipient_email, client_name_original, response_quarter, has_sf_connection, response_month, response_id, gold_created_at, response_year, sf_account_id, survey_type"
+voc_wonloss_interviews,"deal_type, interview_year, file_name, interview_date, opportunity_id_18, interview_quarter, interview_id, sf_account_id, client_name, primary_competitor, interview_type, outcome"
+voc_wonloss_responses,"ai_inferred_category, interview_type, question_projected, response_id, question_standardized, interview_id, question_text, response_text"
+voc_vw_qualtrics_csat_scores,"question_text_clean, gold_created_at, question_category, response_id, score_value, survey_type, score_id, question_id"
+voc_discovery_responses,"interview_id, question_text, interview_type, response_id, response_text, ai_inferred_category"

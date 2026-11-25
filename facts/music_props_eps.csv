@@ -1,0 +1,16 @@
+key,value
+clusteringColumns,"[[""event_id_hex""]]"
+delta.checkpoint.writeStatsAsJson,false
+delta.checkpoint.writeStatsAsStruct,true
+delta.feature.appendOnly,supported
+delta.feature.clustering,supported
+delta.feature.deletionVectors,supported
+delta.feature.domainMetadata,supported
+delta.feature.invariants,supported
+delta.feature.rowTracking,supported
+delta.feature.v2Checkpoint,supported
+delta.minReaderVersion,3
+delta.minWriterVersion,7
+delta.parquet.compression.codec,zstd
+delta.rowTracking.materializedRowCommitVersionColumnName,_row-commit-version-col-042f6dd9-a49b-4ee2-aeba-69a91b889022
+delta.rowTracking.materializedRowIdColumnName,_row-id-col-9b7b3045-6096-4ccc-8837-afed2df22aeb

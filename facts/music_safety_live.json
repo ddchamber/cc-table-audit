@@ -1,0 +1,674 @@
+[
+ {
+  "table": "music_artist_lookup",
+  "verdict": "Keep as is",
+  "used_by": [
+   "dashboard",
+   "genie",
+   "job:01",
+   "job:04",
+   "job:05",
+   "job:07",
+   "job:08",
+   "job:09",
+   "job:10",
+   "job:99"
+  ],
+  "reads_7d": {
+   "read_via": "DASHBOARD_V3, ad hoc, JOB",
+   "readers": "dan.chamberlin, matthew.sutton, blythe.reyes, sean.poole, StephenMendrys, 114fc8c7-043f-4091-a952-a578e44ea7ff",
+   "last_read": "2026-11-23"
+  },
+  "status": "ok"
+ },
+ {
+  "table": "music_artist_lookup_nightly",
+  "verdict": "Move to silver",
+  "used_by": [
+   "job:05",
+   "job:06",
+   "job:08",
+   "job:09",
+   "job:10",
+   "job:99"
+  ],
+  "reads_7d": {
+   "read_via": "JOB, ad hoc",
+   "readers": "dan.chamberlin",
+   "last_read": "2026-11-23"
+  },
+  "status": "ok"
+ },
+ {
+  "table": "music_artist_lookup_nightly_base",
+  "verdict": "Move to silver",
+  "used_by": [
+   "job:01",
+   "job:02",
+   "job:03",
+   "job:04",
+   "job:05"
+  ],
+  "reads_7d": {
+   "read_via": "JOB, ad hoc",
+   "readers": "dan.chamberlin",
+   "last_read": "2026-11-23"
+  },
+  "status": "ok"
+ },
+ {
+  "table": "music_artist_lookup_step16",
+  "verdict": "Delete",
+  "used_by": [],
+  "reads_7d": null,
+  "status": "ok"
+ },
+ {
+  "table": "music_artist_lookup_step16_live",
+  "verdict": "Delete",
+  "used_by": [],
+  "reads_7d": null,
+  "status": "ok"
+ },
+ {
+  "table": "music_artist_lookup_step17",
+  "verdict": "NOT ON TAB",
+  "used_by": [
+   "job:01"
+  ],
+  "reads_7d": null,
+  "status": "CHECK"
+ },
+ {
+  "table": "music_artist_lookup_step17_live",
+  "verdict": "Delete",
+  "used_by": [],
+  "reads_7d": null,
+  "status": "ok"
+ },
+ {
+  "table": "music_artist_lookup_step18",
+  "verdict": "NOT ON TAB",
+  "used_by": [
+   "job:05",
+   "job:06",
+   "job:09"
+  ],
+  "reads_7d": null,
+  "status": "CHECK"
+ },
+ {
+  "table": "music_artist_lookup_step22",
+  "verdict": "Delete",
+  "used_by": [],
+  "reads_7d": null,
+  "status": "ok"
+ },
+ {
+  "table": "music_artist_lookup_step22_base",
+  "verdict": "Delete",
+  "used_by": [],
+  "reads_7d": null,
+  "status": "ok"
+ },
+ {
+  "table": "music_asu_event_signups",
+  "verdict": "Keep as is",
+  "used_by": [
+   "job:07",
+   "job:09",
+   "job:10",
+   "job:99"
+  ],
+  "reads_7d": {
+   "read_via": "JOB, ad hoc",
+   "readers": "dan.chamberlin, sean.poole",
+   "last_read": "2026-11-23"
+  },
+  "status": "ok"
+ },
+ {
+  "table": "music_asu_event_signups_nightly",
+  "verdict": "Move to silver",
+  "used_by": [
+   "job:07",
+   "job:09",
+   "job:10",
+   "job:99"
+  ],
+  "reads_7d": {
+   "read_via": "JOB",
+   "readers": "dan.chamberlin",
+   "last_read": "2026-11-23"
+  },
+  "status": "ok"
+ },
+ {
+  "table": "music_asu_event_signups_step19",
+  "verdict": "NOT ON TAB",
+  "used_by": [
+   "job:09"
+  ],
+  "reads_7d": null,
+  "status": "CHECK"
+ },
+ {
+  "table": "music_asu_event_signups_step19_rollback",
+  "verdict": "Delete",
+  "used_by": [],
+  "reads_7d": null,
+  "status": "ok"
+ },
+ {
+  "table": "music_asu_event_signups_step22",
+  "verdict": "Delete",
+  "used_by": [],
+  "reads_7d": null,
+  "status": "ok"
+ },
+ {
+  "table": "music_asu_tour_conversion",
+  "verdict": "Keep as is",
+  "used_by": [
+   "job:08",
+   "job:10",
+   "job:99"
+  ],
+  "reads_7d": {
+   "read_via": "ad hoc, DASHBOARD_V3, JOB",
+   "readers": "dan.chamberlin, sean.poole, e8f6e967-adf4-4bd3-b8a0-4f703110c6a9, matthew.sutton",
+   "last_read": "2026-11-23"
+  },
+  "status": "ok"
+ },
+ {
+  "table": "music_asu_tour_conversion_by_tour",
+  "verdict": "NOT ON TAB",
+  "used_by": [
+   "dashboard",
+   "genie",
+   "job:99"
+  ],
+  "reads_7d": {
+   "read_via": "DASHBOARD_V3, ad hoc",
+   "readers": "dan.chamberlin, blythe.reyes",
+   "last_read": "2026-11-23"
+  },
+  "status": "CHECK"
+ },
+ {
+  "table": "music_asu_tour_conversion_by_tour_nightly",
+  "verdict": "NOT ON TAB",
+  "used_by": [
+   "job:08",
+   "job:99"
+  ],
+  "reads_7d": {
+   "read_via": "JOB",
+   "readers": "dan.chamberlin",
+   "last_read": "2026-11-23"
+  },
+  "status": "CHECK"
+ },
+ {
+  "table": "music_asu_tour_conversion_nightly",
+  "verdict": "Move to silver",
+  "used_by": [
+   "job:08",
+   "job:10",
+   "job:99"
+  ],
+  "reads_7d": {
+   "read_via": "JOB",
+   "readers": "dan.chamberlin",
+   "last_read": "2026-11-23"
+  },
+  "status": "ok"
+ },
+ {
+  "table": "music_asu_tour_conversion_step17_live",
+  "verdict": "Delete",
+  "used_by": [],
+  "reads_7d": null,
+  "status": "ok"
+ },
+ {
+  "table": "music_asu_tour_conversion_step18_live",
+  "verdict": "Delete",
+  "used_by": [],
+  "reads_7d": null,
+  "status": "ok"
+ },
+ {
+  "table": "music_asu_tour_conversion_step19_rollback",
+  "verdict": "Delete",
+  "used_by": [],
+  "reads_7d": null,
+  "status": "ok"
+ },
+ {
+  "table": "music_asu_tour_conversion_step22",
+  "verdict": "Delete",
+  "used_by": [],
+  "reads_7d": null,
+  "status": "ok"
+ },
+ {
+  "table": "music_benchmark_events",
+  "verdict": "Keep as is",
+  "used_by": [
+   "dashboard",
+   "genie",
+   "job:99"
+  ],
+  "reads_7d": {
+   "read_via": "ad hoc, DASHBOARD_V3",
+   "readers": "dan.chamberlin, matthew.sutton",
+   "last_read": "2026-11-23"
+  },
+  "status": "ok"
+ },
+ {
+  "table": "music_benchmark_events_b4b5",
+  "verdict": "Delete",
+  "used_by": [],
+  "reads_7d": null,
+  "status": "ok"
+ },
+ {
+  "table": "music_benchmark_events_ctrl",
+  "verdict": "Delete",
+  "used_by": [],
+  "reads_7d": null,
+  "status": "ok"
+ },
+ {
+  "table": "music_benchmark_events_nightly",
+  "verdict": "Move to silver",
+  "used_by": [
+   "job:09",
+   "job:99"
+  ],
+  "reads_7d": {
+   "read_via": "JOB",
+   "readers": "dan.chamberlin",
+   "last_read": "2026-11-23"
+  },
+  "status": "ok"
+ },
+ {
+  "table": "music_benchmark_events_step21",
+  "verdict": "NOT ON TAB",
+  "used_by": [
+   "job:09"
+  ],
+  "reads_7d": null,
+  "status": "CHECK"
+ },
+ {
+  "table": "music_benchmark_events_step22",
+  "verdict": "Delete",
+  "used_by": [],
+  "reads_7d": null,
+  "status": "ok"
+ },
+ {
+  "table": "music_benchmark_stats",
+  "verdict": "Keep as is",
+  "used_by": [
+   "dashboard",
+   "genie",
+   "job:10",
+   "job:99"
+  ],
+  "reads_7d": {
+   "read_via": "DASHBOARD_V3, JOB, ad hoc",
+   "readers": "dan.chamberlin, sean.poole, matthew.sutton",
+   "last_read": "2026-11-23"
+  },
+  "status": "ok"
+ },
+ {
+  "table": "music_benchmark_stats_b4b5",
+  "verdict": "Delete",
+  "used_by": [],
+  "reads_7d": null,
+  "status": "ok"
+ },
+ {
+  "table": "music_benchmark_stats_ctrl",
+  "verdict": "Delete",
+  "used_by": [],
+  "reads_7d": null,
+  "status": "ok"
+ },
+ {
+  "table": "music_benchmark_stats_nightly",
+  "verdict": "Move to silver",
+  "used_by": [
+   "job:09",
+   "job:10",
+   "job:99"
+  ],
+  "reads_7d": {
+   "read_via": "JOB",
+   "readers": "dan.chamberlin",
+   "last_read": "2026-11-23"
+  },
+  "status": "ok"
+ },
+ {
+  "table": "music_benchmark_stats_step15_snapshot",
+  "verdict": "Delete",
+  "used_by": [],
+  "reads_7d": null,
+  "status": "ok"
+ },
+ {
+  "table": "music_benchmark_stats_step16",
+  "verdict": "Delete",
+  "used_by": [],
+  "reads_7d": null,
+  "status": "ok"
+ },
+ {
+  "table": "music_benchmark_stats_step16_baseline",
+  "verdict": "Delete",
+  "used_by": [],
+  "reads_7d": null,
+  "status": "ok"
+ },
+ {
+  "table": "music_benchmark_stats_step16_live",
+  "verdict": "Delete",
+  "used_by": [],
+  "reads_7d": null,
+  "status": "ok"
+ },
+ {
+  "table": "music_benchmark_stats_step17_live",
+  "verdict": "Delete",
+  "used_by": [],
+  "reads_7d": null,
+  "status": "ok"
+ },
+ {
+  "table": "music_benchmark_stats_step22",
+  "verdict": "Delete",
+  "used_by": [],
+  "reads_7d": null,
+  "status": "ok"
+ },
+ {
+  "table": "music_dashboard_guide",
+  "verdict": "NOT ON TAB",
+  "used_by": [
+   "genie"
+  ],
+  "reads_7d": {
+   "read_via": "ad hoc",
+   "readers": "blythe.reyes, dan.chamberlin",
+   "last_read": "2026-11-21"
+  },
+  "status": "CHECK"
+ },
+ {
+  "table": "music_event_phase_summary",
+  "verdict": "Keep as is",
+  "used_by": [
+   "dashboard",
+   "genie",
+   "job:04",
+   "job:05",
+   "job:09",
+   "job:10",
+   "job:99"
+  ],
+  "reads_7d": {
+   "read_via": "ad hoc, JOB, DASHBOARD_V3",
+   "readers": "dan.chamberlin, blythe.reyes, sean.poole, StephenMendrys, 114fc8c7-043f-4091-a952-a578e44ea7ff, matthew.sutton",
+   "last_read": "2026-11-23"
+  },
+  "status": "ok"
+ },
+ {
+  "table": "music_event_phase_summary_nightly",
+  "verdict": "Move to silver",
+  "used_by": [
+   "job:04",
+   "job:05",
+   "job:06",
+   "job:09",
+   "job:10",
+   "job:99"
+  ],
+  "reads_7d": {
+   "read_via": "JOB, ad hoc",
+   "readers": "dan.chamberlin",
+   "last_read": "2026-11-23"
+  },
+  "status": "ok"
+ },
+ {
+  "table": "music_event_phase_summary_step16",
+  "verdict": "Delete",
+  "used_by": [],
+  "reads_7d": null,
+  "status": "ok"
+ },
+ {
+  "table": "music_event_phase_summary_step16_live",
+  "verdict": "Delete",
+  "used_by": [],
+  "reads_7d": null,
+  "status": "ok"
+ },
+ {
+  "table": "music_event_phase_summary_step17",
+  "verdict": "NOT ON TAB",
+  "used_by": [
+   "job:04"
+  ],
+  "reads_7d": null,
+  "status": "CHECK"
+ },
+ {
+  "table": "music_event_phase_summary_step22",
+  "verdict": "Delete",
+  "used_by": [],
+  "reads_7d": null,
+  "status": "ok"
+ },
+ {
+  "table": "music_missing_revenue_events",
+  "verdict": "Your decision",
+  "used_by": [
+   "job:05",
+   "job:10",
+   "job:99"
+  ],
+  "reads_7d": {
+   "read_via": "JOB",
+   "readers": "dan.chamberlin",
+   "last_read": "2026-11-23"
+  },
+  "status": "ok"
+ },
+ {
+  "table": "music_missing_revenue_events_nightly",
+  "verdict": "Move to silver",
+  "used_by": [
+   "job:06",
+   "job:10",
+   "job:99"
+  ],
+  "reads_7d": {
+   "read_via": "JOB",
+   "readers": "dan.chamberlin",
+   "last_read": "2026-11-23"
+  },
+  "status": "ok"
+ },
+ {
+  "table": "music_missing_revenue_events_step22",
+  "verdict": "Delete",
+  "used_by": [],
+  "reads_7d": null,
+  "status": "ok"
+ },
+ {
+  "table": "music_nightly_gate_log",
+  "verdict": "Move to silver",
+  "used_by": [
+   "job:10"
+  ],
+  "reads_7d": {
+   "read_via": "JOB, ad hoc",
+   "readers": "dan.chamberlin",
+   "last_read": "2026-11-23"
+  },
+  "status": "ok"
+ },
+ {
+  "table": "music_phase_alias",
+  "verdict": "Move to silver",
+  "used_by": [
+   "job:04"
+  ],
+  "reads_7d": {
+   "read_via": "JOB, ad hoc",
+   "readers": "dan.chamberlin",
+   "last_read": "2026-11-23"
+  },
+  "status": "ok"
+ },
+ {
+  "table": "music_queue_member_fact",
+  "verdict": "Keep as is",
+  "used_by": [
+   "dashboard",
+   "genie",
+   "job:02",
+   "job:04",
+   "job:09",
+   "job:10",
+   "job:99"
+  ],
+  "reads_7d": {
+   "read_via": "ad hoc, DASHBOARD_V3, JOB",
+   "readers": "dan.chamberlin, daniel.hough, e8f6e967-adf4-4bd3-b8a0-4f703110c6a9, sean.poole, matthew.sutton",
+   "last_read": "2026-11-23"
+  },
+  "status": "ok"
+ },
+ {
+  "table": "music_queue_member_fact_nightly",
+  "verdict": "Move to silver",
+  "used_by": [
+   "job:02",
+   "job:04",
+   "job:08",
+   "job:09",
+   "job:10",
+   "job:99"
+  ],
+  "reads_7d": {
+   "read_via": "JOB, ad hoc",
+   "readers": "dan.chamberlin",
+   "last_read": "2026-11-23"
+  },
+  "status": "ok"
+ },
+ {
+  "table": "music_queue_member_fact_step16",
+  "verdict": "Delete",
+  "used_by": [],
+  "reads_7d": null,
+  "status": "ok"
+ },
+ {
+  "table": "music_queue_member_fact_step16_live",
+  "verdict": "Delete",
+  "used_by": [],
+  "reads_7d": null,
+  "status": "ok"
+ },
+ {
+  "table": "music_queue_member_fact_step22",
+  "verdict": "Delete",
+  "used_by": [],
+  "reads_7d": null,
+  "status": "ok"
+ },
+ {
+  "table": "music_str_daily",
+  "verdict": "Keep as is",
+  "used_by": [
+   "dashboard",
+   "genie",
+   "job:03",
+   "job:04",
+   "job:10",
+   "job:99"
+  ],
+  "reads_7d": {
+   "read_via": "JOB, DASHBOARD_V3, ad hoc",
+   "readers": "dan.chamberlin, matthew.sutton, sean.poole",
+   "last_read": "2026-11-23"
+  },
+  "status": "ok"
+ },
+ {
+  "table": "music_str_daily_nightly",
+  "verdict": "Move to silver",
+  "used_by": [
+   "job:03",
+   "job:04",
+   "job:10",
+   "job:99"
+  ],
+  "reads_7d": {
+   "read_via": "JOB",
+   "readers": "dan.chamberlin",
+   "last_read": "2026-11-23"
+  },
+  "status": "ok"
+ },
+ {
+  "table": "music_str_daily_step16",
+  "verdict": "Delete",
+  "used_by": [],
+  "reads_7d": null,
+  "status": "ok"
+ },
+ {
+  "table": "music_str_daily_step16_live",
+  "verdict": "Delete",
+  "used_by": [],
+  "reads_7d": null,
+  "status": "ok"
+ },
+ {
+  "table": "music_str_daily_step17",
+  "verdict": "NOT ON TAB",
+  "used_by": [
+   "job:03"
+  ],
+  "reads_7d": null,
+  "status": "CHECK"
+ },
+ {
+  "table": "music_str_daily_step22",
+  "verdict": "Delete",
+  "used_by": [],
+  "reads_7d": null,
+  "status": "ok"
+ },
+ {
+  "table": "music_str_daily_step22v2",
+  "verdict": "Delete",
+  "used_by": [],
+  "reads_7d": null,
+  "status": "ok"
+ }
+]

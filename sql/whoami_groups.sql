@@ -1,0 +1,1 @@
+SELECT current_user(), is_account_group_member('central-analytics') ca, (SELECT count(*) FROM system.information_schema.schemata WHERE catalog_name IN ('prod_shared_silver','nonprod_shared_silver') AND schema_name='central_analytics_enr') enr_schemas

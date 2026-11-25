@@ -1,0 +1,1 @@
+DESCRIBE HISTORY prod_shared_gold.central_analytics_crd.music_event_phase_summary

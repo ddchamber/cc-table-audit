@@ -1,0 +1,1 @@
+SELECT table_name, concat_ws(', ', collect_list(column_name)) AS cols FROM prod_shared_gold.information_schema.columns WHERE table_schema='central_analytics_crd' AND table_name IN ('voc_wonloss_interviews','voc_discovery_interviews','voc_wonloss_responses','voc_discovery_responses','voc_vw_qualtrics_survey_responses','voc_vw_qualtrics_csat_scores') GROUP BY table_name
